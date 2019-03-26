@@ -242,7 +242,6 @@ int GamePlay::menu()
 		
 		//Waits for user to hit enter before clearing screen
 		cout << "Hit enter for battle to commence..." << endl;
-		cin.ignore();
 		cin.get();
 
 
@@ -328,7 +327,7 @@ void GamePlay::gameLoop()
         {
             attackNum++;
             cout << "Press enter to continue to the next attack." << endl;
-            cin.ignore();
+            cin.get();
 
             /*Prints for the players who is attacking, who is defending, and
             what the defendents armor and strength currently are. */
@@ -379,7 +378,7 @@ void GamePlay::gameLoop()
 
             //Prompts user to hit enter before the next attack
             cout << "Press enter to continue to the next attack." << endl;
-            cin.ignore();
+            cin.get();
         	
 		}
     }
@@ -419,7 +418,7 @@ void GamePlay::gameLoop()
 	delete player2;
 
     cout << "Press enter to continue." << endl;
-    cin.ignore();
+    cin.get();
 
 }
 
