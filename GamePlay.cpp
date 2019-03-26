@@ -240,6 +240,7 @@ int GamePlay::menu()
         player2->printChar();
 		//cout << endl;
 		
+		cin.ignore(256,'\n');
 		//Waits for user to hit enter before clearing screen
 		cout << "Hit enter for battle to commence..." << endl;
 		cin.get();
